@@ -1,0 +1,24 @@
+#include <iostream> 
+using namespace std; 
+ 
+int main() { 
+    int N, M; 
+    cin >> N >> M; 
+ 
+    int arr[100][100];  // as per constraints 
+    for (int i = 0; i < N; i++) { 
+        for (int j = 0; j < M; j++) { 
+            cin >> arr[i][j]; 
+        } 
+    } 
+ 
+    // Printing Transpose (M x N) 
+    for (int j = 0; j < M; j++) { 
+        for (int i = 0; i < N; i++) { 
+            cout << arr[i][j] << " "; 
+        } 
+        cout << endl; 
+    } 
+ 
+    return 0; 
+}
